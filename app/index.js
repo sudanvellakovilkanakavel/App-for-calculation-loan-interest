@@ -7,18 +7,18 @@ var HelloWorld = React.createClass({
     render: function () {
 
     	return (
-            <div> 
+            <div className= "jumbotron col-sm-6 col-sm-offset-3 text-center"> 
              <form>
-            <h2>An Effective  App For Calculating Your Loan Interest </h2>
+            <h2>An React  App For Calculating Your Monthly Loan Interest </h2>
             <br />
             <br />
             <br />
            
-            Enter loan amount : &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            Enter loan amount : &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
             <input type="text"  />
             <br />
             <br />
-            Enter  interest rate: &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            Enter  interest rate: &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text"  />
              <br />
              <br />
@@ -28,12 +28,14 @@ var HelloWorld = React.createClass({
             <br />
               <br />
               <br />
+              <div className="form-group col-sm-4 col-sm-offset-4">
 
             <button
 className="btn btn-block btn-success"
 type="submit">
-Calculate The Aount Payable on Each Month
+CALCULATE
 </button>
+</div>
 <br />
               <br />
               <br />
