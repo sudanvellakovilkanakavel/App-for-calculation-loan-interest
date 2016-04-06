@@ -14,16 +14,16 @@ var HelloWorld = React.createClass({
             <br />
             <br />
            
-            Enter loan amount : &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-            <input type="text"  />
+            <label>Enter loan amount :</label> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            <input type="text" class="form-control" />
             <br />
             <br />
-            Enter  interest rate: &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text"  />
+            <label>Enter  interest rate: </label>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" class="form-control" />
              <br />
              <br />
-            Enter duration in months: &nbsp;
-            <input type="text"  />
+            <label>Enter duration in months: </label>&nbsp;
+            <input type="text" class="form-control" />
 
             <br />
               <br />
@@ -40,7 +40,7 @@ CALCULATE
               <br />
               <br />
 
-              Amount payable on each month is (Interest+Principal):
+              <label>Amount payable on each month is (Interest+Principal):</label>
             </form>
 
 
