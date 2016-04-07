@@ -4,11 +4,22 @@ var ReactDOM = require('react-dom');
 
 var HelloWorld = React.createClass({
 
+
+calInterest: function() {
+
+
+alert("The form was submitted");
+
+
+},
+
+
+
     render: function () {
 
     	return (
             <div className= "jumbotron col-sm-6 col-sm-offset-3 text-center"> 
-             <form>
+             <form onSubmit={this.calInterest}>
             <h2>An React  App For Calculating Your Monthly Loan Interest </h2>
             <br />
             <br />
