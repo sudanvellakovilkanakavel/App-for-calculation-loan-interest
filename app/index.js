@@ -40,8 +40,37 @@ if( document.myForm.age.value == "" )
             return false;
          }
 
- return( true );
+ 
 
+  if(
+
+    document.myForm.age.value !== "" && 
+    document.myForm.income.value !== "" && 
+    document.myForm.loan.value !== "" &&
+    document.myForm.rate.value !== "" &&
+    document.myForm.months.value !== ""
+
+    )
+         {
+
+            var loanterm = document.myForm.months.value;
+            var roicomb;  //rate of interest calculated on monthly basis
+         
+            var emi;
+            var principle = document.myForm.loan.value;
+            var rannualinterest = document.myForm.rate.value ;
+
+
+
+
+           roicomb = rannualinterest/12/100;
+           emi=principle*roicomb*(1+roicomb)^loanterm/((1+roicomb)^loanterm-1);
+           console.log(emi);
+           return emi;
+
+          }
+
+return( true );
 },
 
 
@@ -91,7 +120,7 @@ if( document.myForm.age.value == "" )
 </div>
 </div>
            <br />
-
+           
                <div class="form-group">
             <label>Enter the current age :</label> 
             <div class="col-sm-6">  
