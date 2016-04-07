@@ -5,11 +5,42 @@ var ReactDOM = require('react-dom');
 var HelloWorld = React.createClass({
 
 
-calInterest: function() {
+calInterestandvalidation: function() {
 
 
-alert("The form was submitted");
+if( document.myForm.age.value == "" )
+         {
+            alert( "Please provide your age!" );
+            document.myForm.age.focus() ;
+            return false;
+         }
+ if( document.myForm.income.value == "" )
+         {
+            alert( "Please provide your income!" );
+            document.myForm.income.focus() ;
+            return false;
+         }
+  if( document.myForm.loan.value == "" )
+         {
+            alert( "Please provide your loan!" );
+            document.myForm.loan.focus() ;
+            return false;
+         }
 
+  if( document.myForm.rate.value == "" )
+         {
+            alert( "Please provide your rate!" );
+            document.myForm.rate.focus() ;
+            return false;
+         }
+  if( document.myForm.months.value == "" )
+         {
+            alert( "Please provide your months!" );
+            document.myForm.months.focus() ;
+            return false;
+         }
+
+ return( true );
 
 },
 
@@ -19,7 +50,7 @@ alert("The form was submitted");
 
     	return (
             <div className= "jumbotron col-sm-6 col-sm-offset-3 text-center"> 
-             <form name="myForm" onSubmit= {this.calInterest}>
+             <form name="myForm" onSubmit= {this.calInterestandvalidation}>
              <h2>CHOOSE YOUR LOAN WISELY </h2>
             <h4>An React  App For Calculating Your Monthly Loan Interest in Different Canadian Banks</h4>
            
@@ -64,35 +95,35 @@ alert("The form was submitted");
                <div class="form-group">
             <label>Enter the current age :</label> 
             <div class="col-sm-6">  
-            <input type="number" class="form-control" placeholder="eg. 25" />
+            <input type="number" class="form-control" name="age" placeholder="eg. 25" />
          </div>
          </div>
            <br />
            <div class="form-group">
             <label>Enter monthly income in $:</label> 
             <div class="col-sm-6"> 
-            <input type="number" class="form-control" placeholder="eg. 30000" />
+            <input type="number" class="form-control" name="income" placeholder="eg. 30000" />
             </div>
             </div>
               <br />
          <div class="form-group">
             <label>Enter loan amount in $:</label> 
             <div class="col-sm-6"> 
-            <input type="number" class="form-control" placeholder="eg. 1000000" />
+            <input type="number" class="form-control" name="loan" placeholder="eg. 1000000" />
             </div>
             </div>
               <br />
              <div class="form-group">
             <label>Enter  interest rate in % : </label>
              <div class="col-sm-6"> 
-            <input type="text" class="form-control" placeholder="eg. 10.5" />
+            <input type="text" class="form-control" name="rate" placeholder="eg. 10.5" />
             </div>
             </div>
              <br />
            <div class="form-group">
             <label>Enter duration in months : </label>
             <div class="col-sm-6"> 
-            <input type="number" class="form-control" placeholder="eg. 48" />
+            <input type="number" class="form-control" name="months" placeholder="eg. 48" />
            </div>
             </div>
             <br />
