@@ -80,7 +80,7 @@ return( true );
     	return (
             <div className= "jumbotron col-sm-6 col-sm-offset-3 text-center"> 
              <form name="myForm" onSubmit= {this.calInterestandvalidation}>
-             <h2>CHOOSE YOUR LOAN WISELY </h2>
+             <h2><font color="orange">CHOOSE YOUR LOAN WISELY </font></h2>
             <h4>An React  App For Calculating Your Monthly Loan Interest in Different Canadian Banks</h4>
            
             
