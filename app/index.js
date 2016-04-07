@@ -20,7 +20,8 @@ alert("The form was submitted");
     	return (
             <div className= "jumbotron col-sm-6 col-sm-offset-3 text-center"> 
              <form name="myForm" onSubmit= {this.calInterest}>
-            <h3>An React  App For Calculating Your Monthly Loan Interest </h3>
+             <h2>CHOOSE YOUR LOAN WISELY </h2>
+            <h4>An React  App For Calculating Your Monthly Loan Interest in Different Canadian Banks</h4>
            
             
            <div class="form-group">
