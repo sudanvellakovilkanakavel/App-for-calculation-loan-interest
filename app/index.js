@@ -1,8 +1,16 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+ var divStyle = {
+  background: "#FFF57F",
+ 
+  
+}; 
+
 
 var HelloWorld = React.createClass({
+
+
 
 
 calInterestandvalidation: function() {
@@ -66,7 +74,7 @@ if( document.myForm.age.value == "" )
            roicomb = rannualinterest/12/100;
            emi=principle*roicomb*(1+roicomb)^loanterm/((1+roicomb)^loanterm-1);
            console.log(emi);
-           return emi;
+           return true;
 
           }
 
@@ -78,8 +86,8 @@ return( true );
     render: function () {
 
     	return (
-            <div className= "jumbotron col-sm-6 col-sm-offset-3 text-center"> 
-             <form name="myForm" onSubmit= {this.calInterestandvalidation}>
+            <div className= "jumbotron col-sm-6 col-sm-offset-3 text-center" style={divStyle} > 
+             <form name="myForm" onSubmit= {this.calInterestandvalidation} >
              <h2><font color="orange">CHOOSE YOUR LOAN WISELY </font></h2>
             <h4>An React  App For Calculating Your Monthly Loan Interest in Different Canadian Banks</h4>
            
