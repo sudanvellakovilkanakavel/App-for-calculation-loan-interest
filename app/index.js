@@ -48,18 +48,20 @@ if( document.myForm.age.value == "" )
             return false;
          }
 
- 
+//alert("check1");
 
   if(
 
-    document.myForm.age.value !== "" && 
-    document.myForm.income.value !== "" && 
-    document.myForm.loan.value !== "" &&
-    document.myForm.rate.value !== "" &&
-    document.myForm.months.value !== ""
+
+    document.myForm.age.value != "" && 
+    document.myForm.income.value != "" && 
+    document.myForm.loan.value != "" &&
+    document.myForm.rate.value != "" &&
+    document.myForm.months.value != ""
 
     )
          {
+//alert("check2");
 
             var loanterm = document.myForm.months.value;
             var roicomb;  //rate of interest calculated on monthly basis
@@ -72,8 +74,8 @@ if( document.myForm.age.value == "" )
 
 
            roicomb = rannualinterest/12/100;
-           emi=principle*roicomb*(1+roicomb)^loanterm/((1+roicomb)^loanterm-1);
-           console.log(emi);
+           emi=principle*roicomb *(1+roicomb )^loanterm/((1+roicomb )^loanterm-1);
+           alert(emi);
            return true;
 
           }
