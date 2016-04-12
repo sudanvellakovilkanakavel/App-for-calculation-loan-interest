@@ -2,8 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
  var divStyle = {
-  background: "#FFF57F",
- 
+  background: "#D9EDF7"
+  
   
 }; 
 
@@ -178,7 +178,7 @@ CALCULATE
               <br />
               <br />
 
-              <label>Amount payable on each month is (Interest+Principal):</label>
+              
             </form>
 
 
