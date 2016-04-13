@@ -7,10 +7,38 @@ var ReactDOM = require('react-dom');
   
 }; 
 
+//AppHeader component contain header titles of the app.
 
-var HelloWorld = React.createClass({
+
+//var AppHeader = React.createClass({
 
 
+  //render: function () {
+
+     // return (
+
+            
+           //  <h2><font color="orange">CHOOSE YOUR LOAN WISELY </font></h2>
+           // <h4>An React  App For Calculating Your Monthly Loan Interest in Different Canadian Banks</h4>
+
+           //  )
+                    // }
+
+
+//
+//ReactDOM.render(
+
+//<UserInformation />,
+//document.getElementById('app')
+
+
+ // );
+
+
+ //UserInformation component contain options for the user to enter values.
+
+
+var UserInformation = React.createClass({
 
 
 calInterestandvalidation: function() {
@@ -74,6 +102,7 @@ if( document.myForm.age.value == "" )
 
 
            roicomb = rannualinterest/12/100;
+
            emi=principle*roicomb *(1+roicomb )^loanterm/((1+roicomb )^loanterm-1);
            alert(emi);
            return true;
@@ -198,7 +227,7 @@ CALCULATE
 
 ReactDOM.render(
 
-<HelloWorld  />,
+<UserInformation />,
 document.getElementById('app')
 
 
