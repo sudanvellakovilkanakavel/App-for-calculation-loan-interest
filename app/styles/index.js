@@ -1,10 +1,10 @@
 var styles = {
+   transparentBg: {
+     background: 'transparent'
 
-transparentBg:{
 
-	background:'transparent'
-}
+   }
 
 };
-module.exports = styles;
 
+module.exports = styles;
